@@ -15,7 +15,7 @@ export const HeaderSmall = () => {
         />
         <div className="pl-2 font-bold">
           <h1 className="font-extrabold ">
-            ENERGO<span className="text-[#fe5716]">TA'MIR</span>
+            ENERGO<span className="text-[#fe5716]">TA&apos;MIR</span>
           </h1>
           <h4>SERVIS</h4>
         </div>

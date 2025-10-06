@@ -34,7 +34,7 @@ export const Slider: React.FC<SliderIntroProps> = ({ slides }) => {
       className="h-[400px] md:h-[600px] lg:h-[750px] w-full"
     >
       {slides.map((slide, index) => (
-        <SwiperSlide>
+        <SwiperSlide key={slide.id}>
           <div className="relative w-full h-full ">
             <Image
               src={slide.image}

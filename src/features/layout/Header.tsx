@@ -74,7 +74,7 @@ export const Header = () => {
           <Image src={'/images/logo.png'} width={80} height={80} alt="logo" />
           <div className="pl-2 font-bold">
             <h1 className="font-extrabold">
-              ENERGO<span className="text-[#fe5716]">TA'MIR</span>
+              ENERGO<span className="text-[#fe5716]">TA&apos;MIR</span>
             </h1>
             <h4>SERVIS</h4>
           </div>
