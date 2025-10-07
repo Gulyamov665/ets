@@ -32,7 +32,7 @@ export const Projects = () => {
         className="container mb-10"
       >
         {slides.map((slide) => (
-          <SwiperSlide>
+          <SwiperSlide key={slide.id}>
             <div className="p-2">
               <Image
                 src={slide.image}
