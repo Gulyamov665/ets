@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 
 export const Services = () => {
   return (
-    <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center mb-10">
+    <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       {servicesApi.map((service) => (
         <div
           key={service.id}
-          className="flex flex-col items-center justify-center text-center"
+          className="flex flex-col items-center  text-center"
         >
           <motion.div
             className="rounded-full border-4 border-brand h-[125px] w-[125px] flex justify-center items-center mb-4"

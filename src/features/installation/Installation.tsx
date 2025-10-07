@@ -26,7 +26,9 @@ export const Installation: React.FC<{ cards?: Card[]; title?: string }> = ({
     <section className="py-14 md:py-20 rounded-t-3xl bg-[#ffffff]  relative bottom-5 z-40">
       <div className="container px-6">
         <div className="mb-8 md:mb-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold">{title}</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-orange">
+            {title}
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

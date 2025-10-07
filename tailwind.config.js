@@ -24,7 +24,8 @@ export default {
         extend: {
             colors: {
                 brand: "#0a9642",
-                orange: "#fe5716",
+                "brand-orange": "#fe5716",
+                "brand-grey": "#fafafa"
             },
             fontFamily: {
                 sans: ['var(--font-sora)', ...defaultTheme.fontFamily.sans],
