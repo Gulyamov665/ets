@@ -24,4 +24,18 @@ export const slides = [
     title: 'Future Tech',
     text: 'Earum sunt reprehenderit tempora! Hic odio distinctio ipsam.',
   },
+  {
+    id: 4,
+    image: img3,
+    alt: 'slide 3',
+    title: 'Future Tech',
+    text: 'Earum sunt reprehenderit tempora! Hic odio distinctio ipsam.',
+  },
+  {
+    id: 5,
+    image: img3,
+    alt: 'slide 3',
+    title: 'Future Tech',
+    text: 'Earum sunt reprehenderit tempora! Hic odio distinctio ipsam.',
+  },
 ]

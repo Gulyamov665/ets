@@ -8,10 +8,10 @@ export const Services = () => {
       {servicesApi.map((service) => (
         <div
           key={service.id}
-          className="flex flex-col items-center  text-center"
+          className="flex flex-col items-center  text-center cursor-pointer"
         >
           <motion.div
-            className="rounded-full border-4 border-brand h-[125px] w-[125px] flex justify-center items-center mb-4"
+            className="rounded-full border-4 border-brand h-[125px] w-[125px] flex justify-center items-center mb-4 "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

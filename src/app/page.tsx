@@ -1,8 +1,10 @@
 'use client'
+import { ContactBlock } from '@/features/contact/ContactBlock'
 import { Installation } from '@/features/installation/Installation'
 import { Slider } from '@/features/intro/SliderIntro'
 import { Projects } from '@/features/projects/Projects'
 import { Services } from '@/features/services/Services'
+import Testimonial from '@/features/testimonial/Testimonial'
 import { slides } from '@/services/slidesApi'
 import React from 'react'
 
@@ -13,6 +15,8 @@ export default function HomePage() {
       <Installation />
       <Services />
       <Projects />
+      <Testimonial />
+      <ContactBlock />
     </main>
   )
 }

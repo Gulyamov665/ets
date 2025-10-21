@@ -14,7 +14,7 @@ export const Projects = () => {
   }
 
   return (
-    <div className="bg-brand-grey pt-20 pb-15">
+    <div className="bg-brand-grey pt-20 pb-2">
       <div>
         <p className="text-center font-extrabold text-3xl mb-10 text-brand-orange">
           Наши проекты
@@ -50,6 +50,7 @@ export const Projects = () => {
                 SYSTEM
               </p>
             </div>
+            <div className='h-[50px]'></div>
           </SwiperSlide>
         ))}
       </Swiper>
