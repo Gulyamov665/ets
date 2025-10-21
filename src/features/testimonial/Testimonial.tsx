@@ -78,7 +78,7 @@ export default function Testimonial() {
               Testimonials
             </p>
             <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
-              Client's Reviews
+              Clients Reviews
             </h2>
 
             <p className="text-gray-500 text-lg lg:text-xl max-w-[640px] mb-8">
