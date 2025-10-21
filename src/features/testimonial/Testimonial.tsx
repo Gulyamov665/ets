@@ -6,7 +6,7 @@ import img from '@/assets/images/testimonial/000067250153.jpg'
 
 type Avatar = { id: string; src: StaticImageData; alt?: string }
 
-export default function Testimonial() {
+export const Testimonial = () => {
   // Использую картинки из public/images — положи свои файлы туда.
   const mainImage = {
     src: img,

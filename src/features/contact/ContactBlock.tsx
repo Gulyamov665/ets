@@ -19,7 +19,7 @@ export const ContactBlock = () => {
         {/* Затемнение поверх */}
         <div className="absolute inset-0 bg-[rgba(23,25,90,0.851)] z-20 rounded-3xl"></div>
 
-        <div className="flex relative z-30  justify-center items-center pl-10 pr-10">
+        {/* <div className="flex relative z-30  justify-center items-center pl-10 pr-10">
           <div className="w-1/2 p-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam
             neque temporibus architecto fugiat aspernatur non magnam porro,
@@ -28,7 +28,7 @@ export const ContactBlock = () => {
           <div className="w-1/2 p-4 top-[45px] relative">
             <ContactForm />
           </div>
-        </div>
+        </div> */}
 
         {/* Контент поверх всего */}
         <div className="relative z-30 flex items-center justify-center h-full text-white">

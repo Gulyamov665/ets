@@ -4,8 +4,8 @@ import { Installation } from '@/features/installation/Installation'
 import { Slider } from '@/features/intro/SliderIntro'
 import { Projects } from '@/features/projects/Projects'
 import { Services } from '@/features/services/Services'
-import Testimonial from '@/features/testimonial/Testimonial'
 import { slides } from '@/services/slidesApi'
+import { Testimonial } from '@/features/testimonial/Testimonial'
 import React from 'react'
 
 export default function HomePage() {
@@ -16,6 +16,7 @@ export default function HomePage() {
       <Services />
       <Projects />
       <Testimonial />
+      
       <ContactBlock />
     </main>
   )
