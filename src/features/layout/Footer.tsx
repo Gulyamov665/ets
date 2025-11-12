@@ -130,7 +130,7 @@ export const Footer = () => {
               <p className="font-medium tracking-wide">
                 © 2025
                 <span className="text-brand-orange font-semibold">
-                  ENERGOTA'MIRSERVIS
+                  {' '}ENERGOTA&apos;MIRSERVIS
                 </span>
                 . Все права защищены.
               </p>
