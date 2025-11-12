@@ -7,9 +7,9 @@ import { motion } from 'framer-motion'
 interface Slide {
   id: number
   image: StaticImageData
-  alt: string
-  text: string
-  title: string
+  alt?: string
+  text?: string
+  title?: string
 }
 
 interface SliderIntroProps {
@@ -38,7 +38,7 @@ export const Slider: React.FC<SliderIntroProps> = ({ slides }) => {
           <div className="relative w-full h-full ">
             <Image
               src={slide.image}
-              alt={slide.alt}
+              alt={slide.alt ?? 'slide image'}
               fill
               className="object-cover w-full h-full "
             />

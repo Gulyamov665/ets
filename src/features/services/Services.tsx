@@ -12,7 +12,7 @@ export const Services = () => {
           className="flex flex-col items-center  text-center cursor-pointer"
         >
           <motion.div
-            className="  flex justify-center items-center mb-4 relative shadow-2xl rounded-2xl"
+            className="flex justify-center items-center mb-4 relative shadow-2xl rounded-2xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

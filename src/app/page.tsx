@@ -5,7 +5,6 @@ import { Slider } from '@/features/intro/SliderIntro'
 import { Projects } from '@/features/projects/Projects'
 import { Services } from '@/features/services/Services'
 import { slides } from '@/services/slidesApi'
-import { Testimonial } from '@/features/testimonial/Testimonial'
 import React from 'react'
 
 export default function HomePage() {
@@ -15,8 +14,8 @@ export default function HomePage() {
       <Installation />
       <Services />
       <Projects />
-      <Testimonial />
-      
+      {/* <Testimonial /> */}
+
       <ContactBlock />
     </main>
   )

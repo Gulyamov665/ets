@@ -21,7 +21,7 @@ export type Services = {
   title: string
   subtitle: string
   icon?: React.ReactNode
-  image?: StaticImageData[]
+  image: StaticImageData[]
 }
 
 export const servicesApi: Services[] = [
