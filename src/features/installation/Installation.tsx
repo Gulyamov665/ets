@@ -30,6 +30,9 @@ export const Installation: React.FC<{ cards?: Card[]; title?: string }> = ({
             {title}
           </h2>
         </div>
+        <div className="flex justify-center mb-16">
+          <div className="border-b-4 border-brand-orange w-[83px]"></div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {cards.map((card) => (

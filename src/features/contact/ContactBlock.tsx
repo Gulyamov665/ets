@@ -32,8 +32,6 @@ export const ContactBlock = () => {
       .finally(() => setLoading(false))
   }
 
-  console.log(loading)
-
   return (
     <div className="container pb-10">
       {/* Фон: относительный контейнер, image fill + overlay */}

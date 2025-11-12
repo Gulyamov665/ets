@@ -20,6 +20,9 @@ export const Projects = () => {
           Наши проекты
         </p>
       </div>
+      <div className="flex justify-center mb-16">
+        <div className="border-b-4 border-brand-orange w-[83px]"></div>
+      </div>
       <Swiper
         modules={[Pagination]} // активируем оба модуля
         slidesPerView={1}
@@ -50,7 +53,7 @@ export const Projects = () => {
                 SYSTEM
               </p>
             </div>
-            <div className='h-[50px]'></div>
+            <div className="h-[50px]"></div>
           </SwiperSlide>
         ))}
       </Swiper>

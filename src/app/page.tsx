@@ -2,6 +2,8 @@
 import { ContactBlock } from '@/features/contact/ContactBlock'
 import { Installation } from '@/features/installation/Installation'
 import { Slider } from '@/features/intro/SliderIntro'
+import { Footer } from '@/features/layout/Footer'
+import { Partners } from '@/features/partners/Partners'
 import { Projects } from '@/features/projects/Projects'
 import { Services } from '@/features/services/Services'
 import { slides } from '@/services/slidesApi'
@@ -17,6 +19,8 @@ export default function HomePage() {
       {/* <Testimonial /> */}
 
       <ContactBlock />
+      <Partners />
+      <Footer />
     </main>
   )
 }

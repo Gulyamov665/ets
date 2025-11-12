@@ -39,7 +39,7 @@ export const ContactForm: React.FC<ContactFormType> = ({
         </div>
 
         <div className="mt-10">
-          <button className="hidden md:inline-flex items-center mr-2 gap-2 bg-[#fe5716] border border-[#fe5716] text-[#ffffff] p-[20px] rounded-full font-extrabold text-lg cursor-pointer ">
+          <button className=" md:inline-flex items-center mr-2 gap-2 bg-[#fe5716] border border-[#fe5716] text-[#ffffff] p-[20px] rounded-full font-extrabold text-lg cursor-pointer ">
             Оформить заявку
           </button>
         </div>

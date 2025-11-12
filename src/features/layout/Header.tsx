@@ -52,7 +52,7 @@ export const Header = () => {
               </div>
             </Link>
             <Link
-              href="https://yandex.com/maps/?ll=64.443407%2C39.738994&z=15"
+              href="https://yandex.uz/maps/org/169260339396?si=cegwn4v4ktdxd26306kmvf19p0"
               target="_blank"
               className="hidden lg:block"
             >
@@ -61,7 +61,7 @@ export const Header = () => {
                   <GrLocation className="w-6 h-6 " />
                 </div>
                 <div className="hover:text-[#fe5716]">
-                  Улица Тукимачи, город Бухара
+                  Улица Ислама Каримова, Бухара
                 </div>
               </div>
             </Link>
