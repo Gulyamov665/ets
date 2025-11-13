@@ -13,6 +13,7 @@ export type ContactFormType = {
   register: UseFormRegister<typeof defaultValues>
   handleSubmit: UseFormHandleSubmit<typeof defaultValues>
   onSubmit: (data: typeof defaultValues) => void
+  loading: boolean
 }
 
 export const ContactBlock = () => {
@@ -65,6 +66,7 @@ export const ContactBlock = () => {
             register={register}
             handleSubmit={handleSubmit}
             onSubmit={onSubmit}
+            loading={loading}
           />
         </div>
       </div>

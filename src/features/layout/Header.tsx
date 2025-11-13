@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -5,8 +6,33 @@ import { FaFacebook, FaInstagram, FaTelegram } from 'react-icons/fa'
 import { RiMailSendFill } from 'react-icons/ri'
 import { GrLocation } from 'react-icons/gr'
 import { HeaderSmall } from './components/HeaderSmall'
+import { ThemedModal } from '@/shared/components/ThemedModal'
+import { useForm } from 'react-hook-form'
+import axios from 'axios'
+import { messageUrl } from '@/services/urls'
+
+export const defaultValues = { name: '', phone: '', message: '' }
 
 export const Header = () => {
+  const [open, setOpen] = React.useState(false)
+  const handleOpen = () => setOpen(true)
+  const handleClose = () => setOpen(false)
+  const [loading, setLoading] = React.useState(false)
+  const { register, handleSubmit, reset } = useForm({
+    defaultValues,
+  })
+
+  const onSubmit = (data: typeof defaultValues) => {
+    setLoading(true)
+    axios
+      .post(messageUrl, { ...data, chat_id: '-5043998632' })
+      .then(() => reset())
+      .catch((error) => {
+        console.error('Error submitting form:', error)
+      })
+      .finally(() => setLoading(false))
+  }
+
   return (
     <>
       <header className="lg:bg-brand shadow-sm h-[103px] ">
@@ -102,10 +128,21 @@ export const Header = () => {
           </nav>
         </div>
 
-        <button className="hidden md:inline-flex items-center mr-2 gap-2 bg-[#fe5716] border border-[#fe5716] text-[#ffffff] p-[20px] rounded-full font-extrabold text-lg">
+        <button
+          onClick={handleOpen}
+          className="hidden md:inline-flex items-center mr-2 gap-2 bg-[#fe5716] border border-[#fe5716] text-[#ffffff] p-[20px] rounded-full font-extrabold text-lg cursor-pointer"
+        >
           Связаться с нами
         </button>
       </div>
+      <ThemedModal
+        handleClose={handleClose}
+        open={open}
+        register={register}
+        handleSubmit={handleSubmit}
+        onSubmit={onSubmit}
+        loading={loading}
+      />
     </>
   )
 }

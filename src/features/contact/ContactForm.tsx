@@ -1,10 +1,12 @@
 import React from 'react'
 import { ContactFormType } from './ContactBlock'
+import { CircularProgress } from '@mui/material'
 
 export const ContactForm: React.FC<ContactFormType> = ({
   register,
   handleSubmit,
   onSubmit,
+  loading,
 }) => {
   return (
     <div className="bg-brand rounded-[20px] p-10 ">
@@ -39,8 +41,17 @@ export const ContactForm: React.FC<ContactFormType> = ({
         </div>
 
         <div className="mt-10">
-          <button className=" md:inline-flex items-center mr-2 gap-2 bg-[#fe5716] border border-[#fe5716] text-[#ffffff] p-[20px] rounded-full font-extrabold text-lg cursor-pointer ">
-            Оформить заявку
+          <button
+            className=" md:inline-flex items-center mr-2 gap-2 bg-[#fe5716] min-w-[205px] border border-[#fe5716] text-[#ffffff] p-[20px] rounded-full font-extrabold text-lg cursor-pointer "
+            disabled={loading}
+          >
+            {loading ? (
+              <div className="mx-auto">
+                <CircularProgress size={20} color="inherit" />
+              </div>
+            ) : (
+              <p> Оформить заявку</p>
+            )}
           </button>
         </div>
       </form>
