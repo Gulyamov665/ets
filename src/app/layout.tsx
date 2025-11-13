@@ -5,6 +5,7 @@ import './globals.css'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/pagination'
+import { Footer } from '@/features/layout/Footer'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -45,7 +46,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} ${manrope.variable}`}
       >
         <Header />
+
         {children}
+        <Footer />
       </body>
     </html>
   )

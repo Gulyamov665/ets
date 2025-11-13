@@ -1,7 +1,6 @@
 import React from 'react'
 import { Services, servicesApi } from '@/services/servicesApi'
 import Image from 'next/image'
-import { Slider } from '@/features/intro/SliderIntro'
 
 type Params = { params: { id: string } }
 

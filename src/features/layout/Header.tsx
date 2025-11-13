@@ -96,19 +96,21 @@ export const Header = () => {
         <HeaderSmall />
       </header>
       <div className="hidden container bg-[#ffffffff] mt-[-52px]  rounded-[54px] lg:flex justify-between items-center z-10 absolute left-0 right-0 overflow-auto text-sm font-medium text-[#171717] shadow-sm p-2">
-        <div className="flex items-center">
-          <Image src={'/images/logo.png'} width={80} height={80} alt="logo" />
-          <div className="pl-2 font-bold">
-            <h1 className="font-extrabold">
-              ENERGO<span className="text-[#fe5716]">TA&apos;MIR</span>
-            </h1>
-            <h4>SERVIS</h4>
+        <Link href={'/'}>
+          <div className="flex items-center">
+            <Image src={'/images/logo.png'} width={80} height={80} alt="logo" />
+            <div className="pl-2 font-bold">
+              <h1 className="font-extrabold">
+                ENERGO<span className="text-[#fe5716]">TA&apos;MIR</span>
+              </h1>
+              <h4>SERVIS</h4>
+            </div>
           </div>
-        </div>
+        </Link>
 
         <div className="flex items-center">
           <nav>
-            <Link href={'#'} className="p-[25px]  font-extrabold text-lg">
+            <Link href={'/'} className="p-[25px]  font-extrabold text-lg">
               <span className="hover:text-[#fe5716]">Главная</span>
             </Link>
             <Link href={'#'} className="p-[25px] font-extrabold text-lg">
@@ -119,7 +121,7 @@ export const Header = () => {
             <Link href={'#'} className="p-[25px] font-extrabold text-lg">
               <span className="hover:text-[#fe5716]">Проекты</span>
             </Link>
-            <Link href={'#'} className="p-[25px] font-extrabold text-lg">
+            <Link href={'/services'} className="p-[25px] font-extrabold text-lg">
               <span className="hover:text-[#fe5716]">Услуги</span>
             </Link>
             <Link href={'#'} className="p-[25px] font-extrabold text-lg">
