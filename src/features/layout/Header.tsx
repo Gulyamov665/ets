@@ -10,6 +10,7 @@ import { ThemedModal } from '@/shared/components/ThemedModal'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import { messageUrl } from '@/services/urls'
+import { usePathname } from 'next/navigation'
 
 export const defaultValues = { name: '', phone: '', message: '' }
 
@@ -21,6 +22,12 @@ export const Header = () => {
   const { register, handleSubmit, reset } = useForm({
     defaultValues,
   })
+  const pathname = usePathname()
+
+  const linkClass = (href: string) =>
+    `p-[25px] font-extrabold text-lg transition-colors ${
+      pathname == href ? 'text-[#fe5716]' : 'text-black'
+    }`
 
   const onSubmit = (data: typeof defaultValues) => {
     setLoading(true)
@@ -111,21 +118,31 @@ export const Header = () => {
         <div className="flex items-center">
           <nav>
             <Link href={'/'} className="p-[25px]  font-extrabold text-lg">
-              <span className="hover:text-[#fe5716]">Главная</span>
+              <span className={`hover:text-[#fe5716] ${linkClass('/')}`}>
+                Главная
+              </span>
             </Link>
             <Link href={'#'} className="p-[25px] font-extrabold text-lg">
-              <span className="hover:text-[#fe5716] transition-colors">
+              <span className={`hover:text-[#fe5716] ${linkClass('#')}`}>
                 Партнеры
               </span>
             </Link>
             <Link href={'#'} className="p-[25px] font-extrabold text-lg">
-              <span className="hover:text-[#fe5716]">Проекты</span>
+              <span className={`hover:text-[#fe5716] ${linkClass('#')}`}>
+                Проекты
+              </span>
             </Link>
-            <Link href={'/services'} className="p-[25px] font-extrabold text-lg">
-              <span className="hover:text-[#fe5716]">Услуги</span>
+            <Link href="/services" className="p-[25px] font-extrabold text-lg">
+              <span
+                className={`hover:text-[#fe5716] ${linkClass('/services')}`}
+              >
+                Услуги
+              </span>
             </Link>
             <Link href={'#'} className="p-[25px] font-extrabold text-lg">
-              <span className="hover:text-[#fe5716]">Контакты</span>
+              <span className={`hover:text-[#fe5716] ${linkClass('#')}`}>
+                Контакты
+              </span>
             </Link>
           </nav>
         </div>
