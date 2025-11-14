@@ -14,7 +14,7 @@ import { useForm } from 'react-hook-form'
 
 type Params = { params: { id: string } }
 
-const page: React.FC<Params> = ({ params }) => {
+const Page: React.FC<Params> = ({ params }) => {
   const { id } = params
   const service = servicesListApi.find((serv) => serv.id === Number(id))
   const defaultValues = { name: '', phone: '', message: service?.title || '' }
@@ -176,4 +176,4 @@ const page: React.FC<Params> = ({ params }) => {
   }
 }
 
-export default page
+export default Page
