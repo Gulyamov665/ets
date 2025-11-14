@@ -13,7 +13,7 @@ export const Partners = () => {
       <div className="flex justify-center lg:mb-20  mb-5">
         <div className="border-b-4 border-brand-orange w-[83px]" />
       </div>
-      <div className="mt-5 mb-5 lg:h-64 h-32">
+      <div className="mt-5  lg:h-58 h-32">
         <SliderShared slides={partnersApi} />
       </div>
     </div>
