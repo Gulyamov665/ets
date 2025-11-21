@@ -78,11 +78,9 @@ const Page: React.FC<Params> = ({ params }) => {
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 mb-10 container ">
             <div className="order-2 lg:order-1">
               <p
-                className="text-[16px] font-light whitespace-pre-line"
+                className="text-[16px] font-light whitespace-pre-line leading-6"
                 dangerouslySetInnerHTML={{ __html: service.longDesc ?? '' }}
-              >
-                {/* {service.longDesc} */}
-              </p>
+              ></p>
             </div>
             <div className="order-1 lg:order-2">
               {service.image && (
@@ -93,7 +91,7 @@ const Page: React.FC<Params> = ({ params }) => {
                 />
               )}
               <p
-                className="text-[16px] font-light whitespace-pre-line"
+                className="text-[16px] font-light whitespace-pre-line leading-6"
                 dangerouslySetInnerHTML={{ __html: service.part ?? '' }}
               ></p>
             </div>
