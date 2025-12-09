@@ -11,7 +11,6 @@ type ServicesCardProps = {
 export const ServicesCard: React.FC<ServicesCardProps> = ({
   title,
   desc,
-  id,
   url,
 }) => {
   return (
