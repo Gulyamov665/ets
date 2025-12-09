@@ -5,7 +5,7 @@ export default function Sitemap(): MetadataRoute.Sitemap {
   const base = 'https://energotamirservis.uz'
 
   const services = servicesListApi.map((service) => ({
-    url: `${base}/${service.url}`,
+    url: `${base}/services/${service.url}`,
   }))
   return [
     {
