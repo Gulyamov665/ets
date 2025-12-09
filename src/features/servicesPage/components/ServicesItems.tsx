@@ -12,6 +12,7 @@ export const ServicesItems = () => {
               desc={service.description}
               title={service.title}
               id={service.id}
+              url={service.url}
             />
           </div>
         ))}

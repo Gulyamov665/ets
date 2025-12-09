@@ -35,7 +35,17 @@ export const metadata: Metadata = {
     default: 'EnergoTamir Service',
     template: '%s | EnergoTamirService',
   },
-  description: 'Powered by Aurora-Software',
+  description:
+    'Профессиональные электротехнические услуги в Бухаре: испытания электроустановок, монтаж ККУ, дизельные генераторы, солнечные панели, обслуживание трансформаторных пунктов, релейная защита.',
+  keywords: [
+    'услуги электрика Бухара',
+    'электроиспытания',
+    'дизельный генератор монтаж',
+    'солнечные панели установка',
+    'релейная защита',
+    'Испытание СИЗ',
+    'электромонтаж',
+  ],
 }
 
 export default function RootLayout({

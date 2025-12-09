@@ -5,15 +5,17 @@ type ServicesCardProps = {
   title: string
   desc: string
   id: number
+  url: string
 }
 
 export const ServicesCard: React.FC<ServicesCardProps> = ({
   title,
   desc,
   id,
+  url,
 }) => {
   return (
-    <Link href={`services/${String(id)}`}>
+    <Link href={`services/${url}`}>
       <div className="bg-brand-grey rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 flex flex-col justify-between h-full cursor-pointer">
         <div className="p-8 flex flex-col flex-grow">
           <h2 className="font-extrabold text-2xl md:text-3xl pb-3 text-black">
