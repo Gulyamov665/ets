@@ -31,7 +31,10 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'EnergoTamirService',
+  title: {
+    default: 'EnergoTamir Service',
+    template: '%s | EnergoTamirService',
+  },
   description: 'Powered by Aurora-Software',
 }
 
