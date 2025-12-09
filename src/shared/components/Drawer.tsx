@@ -259,7 +259,7 @@ export const CustomDrawer: React.FC<CustomDrawerProps> = ({
                 textAlign: 'center',
               }}
             >
-              ++998973034444
+              +998973034444
             </button>
           </a>
         </div>
