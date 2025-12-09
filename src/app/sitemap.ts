@@ -9,7 +9,7 @@ export default function Sitemap(): MetadataRoute.Sitemap {
   }))
   return [
     {
-      url: 'https://energotamirservice.com/',
+      url: `${base}/`,
     },
     ...services,
     {
