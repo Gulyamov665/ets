@@ -1,8 +1,11 @@
+import { CustomDrawer } from '@/shared/components/Drawer'
 import Image from 'next/image'
 import React from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 export const HeaderSmall = () => {
+  const [open, setOpen] = React.useState(false)
+
   return (
     <div className="container flex items-center justify-between lg:hidden">
       <div className="flex items-center ">
@@ -20,7 +23,11 @@ export const HeaderSmall = () => {
         </div>
       </div>
 
-      <GiHamburgerMenu className="text-black text-4xl" />
+      <GiHamburgerMenu
+        className="text-black text-4xl"
+        onClick={() => setOpen(true)}
+      />
+      <CustomDrawer open={open} setOpen={setOpen} />
     </div>
   )
 }
