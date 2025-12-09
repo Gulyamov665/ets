@@ -46,6 +46,12 @@ export const metadata: Metadata = {
     'Испытание СИЗ',
     'электромонтаж',
   ],
+  openGraph: {
+    title: 'Услуги электрика в Бухаре | EnergoTamirService',
+    description:
+      'Испытания, монтаж, наладка и обслуживание электроустановок в Бухаре',
+    url: 'https://energotamirservis.uz/services',
+  },
 }
 
 export default function RootLayout({

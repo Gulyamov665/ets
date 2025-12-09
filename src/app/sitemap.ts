@@ -13,13 +13,13 @@ export default function Sitemap(): MetadataRoute.Sitemap {
     },
     ...services,
     {
-      url: 'https://energotamirservice.com/services',
+      url: `${base}/services`,
     },
     {
-      url: 'https://energotamirservice.com/projects',
+      url: `${base}/projects`,
     },
     {
-      url: 'https://energotamirservice.com/contact',
+      url: `${base}/contact`,
     },
   ]
 }
