@@ -6,7 +6,6 @@ import { Partners } from '@/features/partners/Partners'
 import { Projects } from '@/features/projects/Projects'
 import { Services } from '@/features/services/Services'
 import { slides } from '@/services/slidesApi'
-import { Metadata } from 'next'
 import React from 'react'
 
 export default function HomePage() {
