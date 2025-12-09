@@ -32,8 +32,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'EnergoTamir Service',
-    template: '%s | EnergoTamirService',
+    default: 'EnergoTamirServis - Электротехнические услуги в Бухаре',
+    template: '%s | EnergoTamirServis',
   },
   description:
     'Профессиональные электротехнические услуги в Бухаре: испытания электроустановок, монтаж ККУ, дизельные генераторы, солнечные панели, обслуживание трансформаторных пунктов, релейная защита.',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     'электромонтаж',
   ],
   openGraph: {
-    title: 'Услуги электрика в Бухаре | EnergoTamirService',
+    title: 'Услуги электрика в Бухаре | EnergoTamirServis',
     description:
       'Испытания, монтаж, наладка и обслуживание электроустановок в Бухаре',
     url: 'https://energotamirservis.uz/services',
