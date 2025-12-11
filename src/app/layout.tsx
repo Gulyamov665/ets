@@ -62,19 +62,23 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
+
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="icon"
-          type="image/png"
           sizes="32x32"
           href="/favicon-32x32.png"
+          type="image/png"
         />
         <link
           rel="icon"
-          type="image/png"
           sizes="16x16"
           href="/favicon-16x16.png"
+          type="image/png"
         />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} ${manrope.variable}`}
