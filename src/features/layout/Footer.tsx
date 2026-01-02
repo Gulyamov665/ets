@@ -92,9 +92,9 @@ export const Footer = () => {
               <IoPhonePortraitSharp className="w-16 h-16 p-3 bg-brand-orange text-white rounded-full" />
               <div className="pl-4 flex flex-col justify-center">
                 <p className="text-white font-bold">Номер телефона</p>
-                <Link href="tel:+998987744447">
+                <Link href="tel:+998772687707">
                   <p className="text-white font-extrabold text-2xl">
-                    +998987744447
+                    +998772687707
                   </p>
                 </Link>
               </div>
