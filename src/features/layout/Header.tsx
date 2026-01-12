@@ -139,8 +139,13 @@ export const Header = () => {
                 Услуги
               </span>
             </Link>
-            <Link href={'#'} className="p-[25px] font-extrabold text-lg">
-              <span className={`hover:text-[#fe5716] ${linkClass('#')}`}>
+            <Link
+              href={'/contacts'}
+              className="p-[25px] font-extrabold text-lg"
+            >
+              <span
+                className={`hover:text-[#fe5716] ${linkClass('/contacts')}`}
+              >
                 Контакты
               </span>
             </Link>

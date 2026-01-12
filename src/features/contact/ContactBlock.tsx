@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import img from '@/assets/images/img1.jpg'
@@ -49,9 +50,6 @@ export const ContactBlock = () => {
         <div className="absolute inset-0 bg-[rgba(23,25,90,0.85)] pointer-events-none"></div>
       </div>
 
-      {/* Контент — оставляем в потоке, двигаем через margin (не top) */}
-      {/* Если хотите небольшой налёт на фон, используйте -mt-20 (отрицательный margin), 
-          но это меняет layout корректно и прокрутка будет работать как надо */}
       <div className="lg:flex relative z-30 justify-center  lg:pl-10 lg:pr-10 -mt-[510px]">
         <div className="lg:w-1/2 p-4">
           <p className="text-brand-orange text-2xl font-bold mb-10">

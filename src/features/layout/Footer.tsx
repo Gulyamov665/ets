@@ -3,7 +3,7 @@ import img from '@/assets/images/footer.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaFacebook, FaInstagram, FaTelegram } from 'react-icons/fa'
-import { IoPhonePortraitSharp } from 'react-icons/io5'
+import { ContactsRow } from '@/shared/components/ContactsRow'
 
 export const Footer = () => {
   return (
@@ -87,50 +87,15 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="lg:grid grid-cols-3  gap-4 mt-20 mb-10">
-            <div className="rounded-[64px] bg-brand p-2.5 flex mb-4">
-              <IoPhonePortraitSharp className="w-16 h-16 p-3 bg-brand-orange text-white rounded-full" />
-              <div className="pl-4 flex flex-col justify-center">
-                <p className="text-white font-bold">Номер телефона</p>
-                <Link href="tel:+998772687707">
-                  <p className="text-white font-extrabold text-2xl">
-                    +998772687707
-                  </p>
-                </Link>
-              </div>
-            </div>
-            <div className="rounded-[64px] bg-brand p-2.5 flex mb-4">
-              <IoPhonePortraitSharp className="w-16 h-16 p-3 bg-brand-orange text-white rounded-full" />
-              <div className="pl-4 flex flex-col justify-center">
-                <p className="text-white font-bold">Номер телефона</p>
-                <Link href="tel:+998973034444">
-                  <p className="text-white font-extrabold text-2xl">
-                    +998973034444
-                  </p>
-                </Link>
-              </div>
-            </div>
-            <div className="rounded-[64px] bg-brand p-2.5 flex mb-4">
-              <FaTelegram className="w-16 h-16 p-3 bg-brand-orange text-white rounded-full" />
-              <div className="pl-4 flex flex-col justify-center">
-                <p className="text-white font-bold">Локация</p>
-                <Link
-                  href="https://yandex.uz/maps/org/169260339396?si=cegwn4v4ktdxd26306kmvf19p0"
-                  target="_blank"
-                >
-                  <p className="text-white font-extrabold lg:text-2xl text-xs">
-                    Ул.Ислама Каримова, Бухара
-                  </p>
-                </Link>
-              </div>
-            </div>
-          </div>
+
+          <ContactsRow />
           <div className="w-full border-t border-gray-200 py-6 mt-10">
             <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left gap-2 text-gray-500 text-sm">
               <p className="font-medium tracking-wide">
                 © 2025
                 <span className="text-brand-orange font-semibold">
-                  {' '}ENERGOTA&apos;MIRSERVIS
+                  {' '}
+                  ENERGOTA&apos;MIRSERVIS
                 </span>
                 . Все права защищены.
               </p>

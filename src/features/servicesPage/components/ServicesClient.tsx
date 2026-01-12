@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React from 'react'
 import { Slider } from '@/features/intro/SliderIntro'
 import { ServicesList } from '@/features/servicesPage/ServicesList'
