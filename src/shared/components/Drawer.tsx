@@ -94,18 +94,18 @@ interface CustomDrawerProps {
 
 const MENU = [
   { id: 'home', title: 'Главная', href: '/', icon: <HomeIcon /> },
-  {
-    id: 'partners',
-    title: 'Партнёры',
-    href: '/partners',
-    icon: <PeopleIcon />,
-  },
+  // {
+  //   id: 'partners',
+  //   title: 'Партнёры',
+  //   href: '/partners',
+  //   icon: <PeopleIcon />,
+  // },
   { id: 'projects', title: 'Проекты', href: '/projects', icon: <WorkIcon /> },
   { id: 'services', title: 'Услуги', href: '/services', icon: <BuildIcon /> },
   {
     id: 'contacts',
     title: 'Контакты',
-    href: '/contact',
+    href: '/contacts',
     icon: <ContactMailIcon />,
   },
 ]

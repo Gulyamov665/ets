@@ -122,11 +122,11 @@ export const Header = () => {
                 Главная
               </span>
             </Link>
-            <Link href={'#'} className="p-[25px] font-extrabold text-lg">
+            {/* <Link href={'#'} className="p-[25px] font-extrabold text-lg">
               <span className={`hover:text-[#fe5716] ${linkClass('#')}`}>
                 Партнеры
               </span>
-            </Link>
+            </Link> */}
             <Link href={'#'} className="p-[25px] font-extrabold text-lg">
               <span className={`hover:text-[#fe5716] ${linkClass('#')}`}>
                 Проекты
