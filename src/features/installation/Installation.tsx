@@ -4,6 +4,7 @@ import React from 'react'
 import signature from '@/assets/images/chris-hemsworth.webp'
 import Experience from '@/assets/icons/experience.svg'
 import Success from '@/assets/icons/success.svg'
+import Link from 'next/link'
 
 function colorClasses(c?: Card['color']) {
   switch (c) {
@@ -36,8 +37,7 @@ export const Installation: React.FC<{ cards?: Card[]; title?: string }> = ({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {cards.map((card) => (
-            <div
-              key={card.id}
+            <Link
               className={`
                 ${colorClasses(card.color)}
                 rounded-2xl p-10 md:p-12
@@ -46,9 +46,13 @@ export const Installation: React.FC<{ cards?: Card[]; title?: string }> = ({
                 transform transition-transform duration-300
                 hover:-translate-y-2
                 flex flex-col items-center justify-center text-center
+                
               `}
               role="article"
               aria-label={card.title}
+              href={card.url ?? '#'}
+              key={card.id}
+              passHref
             >
               <div
                 className="mb-6  h-40 rounded-full flex items-center justify-center"
@@ -57,15 +61,16 @@ export const Installation: React.FC<{ cards?: Card[]; title?: string }> = ({
                 {card.icon}
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold mb-3">
+              <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white">
                 {card.title}
               </h3>
               {card.subtitle && (
-                <p className="text-md md:text-lg opacity-90 max-w-xl font-medium">
+                <p className="text-md md:text-lg opacity-90 max-w-xl font-medium  text-white">
                   {card.subtitle}
                 </p>
               )}
-            </div>
+              {/* </Link> */}
+            </Link>
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:mt-30 sm:mt-18 lg:mt-30 ">

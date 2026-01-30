@@ -11,6 +11,7 @@ import axios from 'axios'
 import Image from 'next/image'
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { ServicesAccordion } from './ServicesAccordion'
 
 export const ServicesAbout = ({ id }: { id: string }) => {
   const service = servicesListApi.find((serv) => serv.url === id)
@@ -35,7 +36,7 @@ export const ServicesAbout = ({ id }: { id: string }) => {
       .finally(() => setLoading(false))
   }
 
-  if (service) {
+  if (service && service.type !== 'list') {
     return (
       <main>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 h-[600px] mb-20 items-center container mt-20">
@@ -167,6 +168,37 @@ export const ServicesAbout = ({ id }: { id: string }) => {
           loading={loading}
         />
       </main>
+    )
+  }
+  if (service && service.type === 'list') {
+    return (
+      <div>
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 h-[600px] mb-20 items-center container mt-20">
+          <div>
+            <h1 className="lg:text-6xl text-3xl font-extrabold mb-10 whitespace-pre-line">
+              {service.title}
+            </h1>
+            <div className="mt-20" onClick={handleOpen}>
+              <ThemedBtn title="Оставить заявку" />
+            </div>
+          </div>
+          <div>
+            <Image
+              src={service.mainImage}
+              alt="main"
+              className="lg:h-[600px] h-[400px]"
+            />
+          </div>
+        </div>
+        <div className="container mb-10">
+          {service.items &&
+            service.items.map((item) => (
+              <div key={item.id} className="mb-2">
+                <ServicesAccordion item={item} />
+              </div>
+            ))}
+        </div>
+      </div>
     )
   }
 }

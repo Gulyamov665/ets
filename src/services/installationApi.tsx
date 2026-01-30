@@ -7,16 +7,17 @@ export type Card = {
   subtitle?: string
   color?: 'green' | 'blue' | 'teal' | 'gray'
   icon?: React.ReactNode
+  url?: string
 }
 
 export const defaultCards: Card[] = [
   {
     id: 1,
     title: 'Электромонтажные работы',
-    subtitle:
-      'Надёжный монтаж электросетей и оборудования любой сложности',
+    subtitle: 'Надёжный монтаж электросетей и оборудования любой сложности',
     color: 'green',
     icon: <Energy />,
+    url: 'services/elektromontazhnye-vysokovoltnye-raboty',
   },
   {
     id: 2,

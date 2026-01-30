@@ -44,6 +44,7 @@ import check_protocol from '@/assets/images/servis/check_protocol.png'
 import check_protocol2 from '@/assets/images/servis/2_-6.jpg'
 import Point_to_point_condu from '@/assets/images/servis/Point_to_point_condu.jpg'
 import siz from '@/assets/images/servis/siz.jpeg'
+import electricTower from '@/assets/images/servis/png-transparent-electric-tower-electricity-transmission-tower-high-voltage-electric-power-transmission-wire-urban-high-voltage-lines-angle-city-words-phrases.png'
 
 export type Services = {
   id: number
@@ -124,7 +125,26 @@ export const servicesApi: Services[] = [
     image: [rele],
     url: 'naldka-ispytaniya-releynoy-zashity-na-podstantsiyah',
   },
+  {
+    id: 9,
+    title: 'Установка монтаж КРУН 6 кВ и 10 кВ',
+    subtitle: 'Монтаж КРУН под ключ от завода.Пуско-наладка. Лаборатория',
+    icon: <Station2 />,
+    image: [rele],
+    url: 'ustanovka-i-naldka-sistem-avtomatiki',
+  },
 ]
+
+type ServiceItemsSub = {
+  id: number
+  text: string
+}
+
+export type ServiceItems = {
+  id: number
+  title: string
+  items: ServiceItemsSub[]
+}
 
 export type ServicesList = {
   id: number
@@ -133,11 +153,13 @@ export type ServicesList = {
   introPart?: string
   subTitle: string
   description: string
-  image: StaticImageData
+  image?: StaticImageData
   mainImage: StaticImageData
   longDesc?: string
   part?: string
   url: string
+  type?: string
+  items?: ServiceItems[]
 }
 
 export const servicesListApi: ServicesList[] = [
@@ -959,6 +981,88 @@ export const servicesListApi: ServicesList[] = [
 <b style="font-weight:900;"> • </b>Конфиденциальность информации
 <b style="font-weight:900;"> • </b>Юридическую значимость протоколов
 <b style="font-weight:900;"> • </b>Обеспечьте безопасность своих электроустановок – закажите профессиональные испытания СИЗ и кабельных линий прямо сейчас!`,
+  },
+  {
+    id: 15,
+    title: 'Электромонтажные высоковольтные работы',
+    subTitle: 'Другие услуги электролаборатории',
+    description:
+      'Выполнение электромонтажных высоковольтных работ любой сложности с соблюдением всех норм и требований безопасности',
+    // image: high_voltage_work,
+    mainImage: noroot,
+    url: 'elektromontazhnye-vysokovoltnye-raboty',
+    type: 'list',
+    items: [
+      {
+        id: 1,
+        title: 'Ретрофит ячеек высоковольтных',
+        items: [
+          { id: 1, text: 'Ретрофит выключателей' },
+          { id: 2, text: 'Замена ячеек КСО' },
+          { id: 3, text: 'Ретрофит ячеек КРН' },
+          { id: 4, text: 'Замена масляных выключателей' },
+          { id: 5, text: 'Ретрофит ячеек КСО' },
+          { id: 6, text: 'Ретрофит ячеек ЯКНО' },
+        ],
+      },
+      {
+        id: 2,
+        title: 'Установка и наладка выкатных элементов для ячеек КРУ',
+        items: [
+          { id: 7, text: 'Монтаж новых выкатных элементов' },
+          { id: 8, text: 'Ретрофит выкатных элементов' },
+        ],
+      },
+      {
+        id: 3,
+        title: 'Электромонтажные высоковольтные работы',
+        items: [
+          { id: 9, text: 'Монтаж кабельных муфт' },
+          { id: 10, text: 'Монтаж ячеек КСО и КРУ' },
+          { id: 11, text: 'Монтаж коммутационных аппаратов' },
+          { id: 12, text: 'Установка и монтаж релейной защиты' },
+          { id: 13, text: 'Монтаж вакуумных выключателей' },
+          { id: 14, text: 'Монтаж и наладка реклоузера' },
+          { id: 15, text: 'Установка монтаж КРУН 6 кВ и 10 кВ' },
+          { id: 16, text: 'Монтаж ПКУ' },
+        ],
+      },
+      {
+        id: 4,
+        title: 'Замена электротехнического оборудования',
+        items: [
+          { id: 17, text: 'Замена одной ячейки КСО в ряду' },
+          { id: 18, text: 'Замена всех ячеек КСО в РП с ремонтом' },
+          { id: 19, text: 'Замена КРН, КРУН' },
+          { id: 20, text: 'Замена реклоузера' },
+          { id: 21, text: 'Замена старого ПУС, ПСС и ПКУ' },
+        ],
+      },
+      {
+        id: 5,
+        title: 'Услуги электролаборатории',
+        items: [
+          { id: 22, text: 'Испытание высоковольтных выключателей' },
+          { id: 23, text: 'Испытание вакуумных выключателей' },
+          { id: 24, text: 'Высоковольтные испытания изоляции' },
+          { id: 25, text: 'Испытание выключателя 10 кв' },
+        ],
+      },
+      {
+        id: 6,
+        title: 'Пусконаладочные работы',
+        items: [
+          { id: 26, text: 'Наладка и настройка релейной защиты' },
+          { id: 27, text: 'ПНР ячеек КСО' },
+          { id: 28, text: 'ПНР ячеек КРУН' },
+        ],
+      },
+      {
+        id: 7,
+        title: 'Замена и установка трансформаторов от 630 кВА до 4000 кВА',
+        items: [],
+      },
+    ],
   },
 ]
 

@@ -57,7 +57,7 @@ export const Slider: React.FC<SliderIntroProps> = ({ slides }) => {
               className="container absolute inset-0 flex flex-col  justify-center font-extrabold  text-white z-20"
             >
               <p className="text-7xl font-bold mb-4 ">{slide.title}</p>
-              <p className="max-w-lg">{slide.text}</p>
+              <p className="max-w-lg lg:text-2xl">{slide.text}</p>
             </motion.div>
           </div>
         </SwiperSlide>
