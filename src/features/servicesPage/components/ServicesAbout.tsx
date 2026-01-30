@@ -24,6 +24,7 @@ export const ServicesAbout = ({ id }: { id: string }) => {
     defaultValues,
   })
 
+  console.log(open)
   const onSubmit = (data: typeof defaultValues) => {
     setLoading(true)
     axios
@@ -198,6 +199,15 @@ export const ServicesAbout = ({ id }: { id: string }) => {
               </div>
             ))}
         </div>
+
+        <ThemedModal
+          handleClose={handleClose}
+          open={open}
+          register={register}
+          handleSubmit={handleSubmit}
+          onSubmit={onSubmit}
+          loading={loading}
+        />
       </div>
     )
   }
